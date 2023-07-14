@@ -1,0 +1,13 @@
+button {
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--purple);
+  background: var(--purple);
+  font-size: 0.925rem;
+  color: var(--white);
+  transition: background 0.3s;
+
+  &:hover {
+    background: var(--purple-700);
+  }
+}

@@ -1,0 +1,13 @@
+header, main {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--purple-700);
+}
+
+main {
+  margin-top: -1rem;
+  background: var(--white);
+}

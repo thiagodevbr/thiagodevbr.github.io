@@ -1,0 +1,26 @@
+@import './dist/scss/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-900);
+  color: var(--white);
+}
+
+body,
+input,
+textarea,
+button {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}

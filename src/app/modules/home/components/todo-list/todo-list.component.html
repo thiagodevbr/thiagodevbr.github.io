@@ -1,0 +1,21 @@
+<section>
+  <div *ngFor="let item of taskList; let i = index">
+    <div>
+      <input [(ngModel)]="item.checked" type="checkbox" name="todoCheckbox" id="todoCheckbox">
+      <input [(ngModel)]="item.task" [ngClass]="{'checked':  item.checked}" type="text" name="todoText" id="todoText">
+    </div>
+
+    <button (click)="deleteItemOfList(i)">
+      <svg [cIcon]="icons.cilTrash" width="25" title="Shield Icon"></svg>
+    </button>
+  </div>
+
+  <div class="todo-container">
+    <app-todo-input-add-items (emitItemTaskList)="submitItemTaskList($event)"></app-todo-input-add-items>
+    <app-todo-button-delete-all app-todo-button-delete-all *ngIf="taskList.length" (click)="showModalFunction('Deseja remover todos os itens?')"></app-todo-button-delete-all>
+
+  </div>
+
+  <app-modal modalText={{textModal}} (choice)="choiceModal($event)" *ngIf="showModal" (click)="showModalFunction()"></app-modal>
+</section>
+

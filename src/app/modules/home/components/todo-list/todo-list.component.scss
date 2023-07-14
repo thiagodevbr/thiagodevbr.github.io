@@ -1,0 +1,58 @@
+section {
+  color: var(--gray-900);
+  background-image: url("../../../../../assets/bg-task.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  position: relative;
+
+  padding-bottom: 3.5rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 1rem;
+
+    padding-top: 0.8rem;
+
+
+
+    input {
+      &[type="text"] {
+        border: 0;
+        outline: none;
+
+        &.checked {
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    button {
+      border: 0;
+      background: transparent;
+
+      svg {
+        color: var(--purple);
+      }
+    }
+
+    div {
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.todo-container {
+  position: absolute;
+  width: 100%;
+
+  bottom: 8px;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+}

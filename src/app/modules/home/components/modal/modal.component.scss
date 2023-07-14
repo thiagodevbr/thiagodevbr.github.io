@@ -1,0 +1,60 @@
+section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 250px;
+    height: 100px;
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 16px;
+
+    p {
+      font-weight: 700;
+    }
+
+    > button {
+      margin-right: 1rem;
+    }
+
+    button {
+      padding: 3px 12px;
+      font-size: 0.775rem;
+    }
+
+    .button-yes {
+      background: var(--purple);
+      border: 1px solid var(--purple);
+      color: var(--white);
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .button-yes:hover {
+      background: var(--purple-700);
+      border: 1px solid var(--purple-700);
+    }
+
+    .button-no {
+      background: var(--red-400);
+      border: 1px solid var(--red-400);
+      color: var(--white);
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .button-no:hover {
+      background: var(--red-700);
+      border: 1px solid var(--red-700);
+    }
+  }
+}
